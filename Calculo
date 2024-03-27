@@ -1,0 +1,48 @@
+int i;
+int num;
+int fat=1;
+Scanner sc= new Scanner(System.in);
+System.out.println("Entre com um numero");
+num=sc.nextInt();
+for(i=1;i<=num;i++){
+    fat=fat*i;
+}
+System.out.println(fat);
+//Pares
+if(i%2==0){
+    System.out.println(i);
+}
+//quadrado dos multiplos de 5 a 10
+System.out.println("Escolha até que termo irá a sequencia:");
+    num=sc.nextInt();
+    for(i=0; i<num; i++){
+       
+        System.out.println(i*i);
+//fibonacci
+int fib1,fib2,fibo;
+System.out.println("Escolha até que termo irá a sequencia");
+num=sc.nextInt();
+fib1=0;
+fib2=1;
+for(i=0;i<=num;i++){
+       
+        fibo=fib1+fib2;
+        fib1=fib2;
+        fib2=fibo;
+   
+    }
+System.out.print(fib1);
+}
+//primo
+int contDiv=0;
+        System.out.println("Entre com um número");  
+        num=sc.nextInt();
+        for(i=1;i<num; i++)
+            if(num%i==0){
+                contDiv++;
+            }
+        if(contDiv<=2){
+            System.out.println(num+"é primo");
+        }else{
+            System.out.println(num+"não é primo");
+        }
